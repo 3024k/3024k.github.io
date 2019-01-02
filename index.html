@@ -386,7 +386,7 @@ function showPage() {
 				<h1 id="text"><a name="contact">Contact me</a></h1>
 				</hgroup>
 		</header>
-		<form id="contact" action="" method="post">
+		<form id="contact" method="POST" action="send_mail.php">
 		
 	    
 	    
@@ -397,17 +397,13 @@ function showPage() {
 	    <fieldset>
 	      <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
 	    </fieldset>
-	    <fieldset>
-	      <input placeholder="Your Phone Number (optional)" type="tel" name="phone" tabindex="3" required>
-	    </fieldset>
-	    <fieldset>
-	      <input placeholder="Your Web Site (optional)" type="url" name="website" tabindex="4" required>
-	    </fieldset>
+	    
+	    
 	    <fieldset>
 	      <textarea placeholder="Type your message here...." name="message"  tabindex="5" required></textarea>
 	    </fieldset>
 	    <fieldset>
-	      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+	      <button name="submit"  value="SEND MESSAGE" type="submit" id="contact-submit" data-submit="...Sending">SEND MESSAGE</button>
 	    </fieldset>
 	    
 	  </form>
