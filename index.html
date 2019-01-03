@@ -11,6 +11,7 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="js/skillbar.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
 
 </head>
 
@@ -218,88 +219,106 @@ function showPage() {
 
 	</section>
 
-	
+
 	<section>
+
 		<header id = main_section>
 			<hgroup>
 			<h1 id="text"><a name="projects">Projects + Thesis</a></h1>
 			</hgroup>
 		</header>
-		<nav id = "project_menu">
-		<ul>
 		
-			<li><a href="web.html">Website<img src="images/web.jpg" class = "active" width="50px" height="50px" title="Web project"></a></li>
-			<li><a href="#aboutme" >Java<img src="images/java.png" width="50px" height="50px" title="Java Project"></a></li>
-			<li><a href="#skills" >Python<img src="images/python.png" width="50px" height="50px" title="Python project"></a></li>
-			<li><a href="#projects" >Computer Vision<img src="images/cv.png" width="50px" height="50px" title="My Projects"></a></li>
-			<li><a href="#resume" >Deep Learning<img src="images/deep.png" width="50px" height="50px" title="My Resume"></a></li>
-			
-		
-		</ul>
-	</nav>
-		<!--div class="section"-->
-			<div class = "row">
-    			<div class="column">
-      				<div class="container">
-						<img src="images/pro1.PNG" alt="Avatar" class="image">
-					  	<div class="overlay">
-					    	<div class="text">
-					      		<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
-					      		<img src="images/github2.png" alt="HTML tutorial" style="width:80px;height:80px;border:0;">
-					      		</a>
-					    	</div>
+		<div class="main">
 
-					  	</div>
-					</div>
+		<div id="myBtnContainer">
+		  <button class="btn active" onclick="filterSelection('all')"> <img src="images/all.png" width="50px" height="50px" title="All project">Click</button>
+		  <button class="btn" onclick="filterSelection('web')"> <img src="images/web.jpg" class = "active" width="50px" height="50px" title="Web project">Web</button>
+		  <button class="btn" onclick="filterSelection('python')"> <img src="images/python.png" width="50px" height="50px" title="Python project">Python</button>
+		  <button class="btn" onclick="filterSelection('java')"><img src="images/java.png" width="50px" height="50px" title="Java Project"> Java</button>
+		  <button class="btn" onclick="filterSelection('deep_L')"><img src="images/deep.png" width="50px" height="50px" title="My Resume"> Deep Learning</button>
+		</div>
 
-				</div>
+		<!-- Portfolio Gallery Grid -->
+		<div class="pro_row">
+			<div class="pro_column web">
+			<div class = "content">
+				<div class="container">
+  				<img src="images/pro1.PNG" alt="Avatar" class="image">
+  					<div class="overlay">
+    					<div class="text">
+      						<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
+      						<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
+      						</a>
+    					</div>
 
-				<div class="column">
-      				<div class="container">
-  						<img src="images/pro1.PNG" alt="Avatar" class="image">
-  						<div class="overlay">
-    						<div class="text">
-      							<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
-      							<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
-      							</a>
-    						</div>
-
-  						</div>
-					</div>
-				</div>
-
-				<div class="column">
-      				<div class="container">
-  						<img src="images/pro1.PNG" alt="Avatar" class="image">
-  						<div class="overlay">
-    						<div class="text">
-      							<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
-      							<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
-      							</a>
-    						</div>
-
-  						</div>
-					</div>
-				</div>
-
-				<div class="column">
-
-      				<div class="container">
-  						<img src="images/pro1.PNG" alt="Avatar" class="image">
-  						<div class="overlay">
-    						<div class="text">
-      							<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
-      							<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
-      							</a>
-    						</div>
-
-  						</div>
-					</div>
-				</div>
-
+  					</div>
+		  	</div>
 			</div>
-		<!--/div-->
+		    
+		  	</div>
+		  
+		  	<div class="pro_column python">
+		  	<div class="content">
+		    <div class="container">
+  				<img src="images/pro1.PNG" alt="Avatar" class="image">
+  					<div class="overlay">
+    					<div class="text">
+      						<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
+      						<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
+      						</a>
+    					</div>
+
+  					</div>
+		  	</div>
+		  	</div>
+		  </div>
+		  
+		  
+		  
+		  <div class="pro_column java">
+		  <div class="content">
+		    <div class="container">
+  						<img src="images/pro1.PNG" alt="Avatar" class="image">
+  						<div class="overlay">
+    						<div class="text">
+      							<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
+      							<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
+      							</a>
+    						</div>
+
+  						</div>
+		  	</div>
+		  	</div>
+		  </div>
+
+		  
+		  <div class="pro_column deep_L">
+		  <div class="content">
+		    <div class="container">
+  						<img src="images/pro1.PNG" alt="Avatar" class="image">
+  						<div class="overlay">
+    						<div class="text">
+      							<a href="https://github.com/3024k/java-notepad-0.0" target="_blank"> Github <br>
+      							<img src="images/github2.png" alt="HTML tutorial" style="width:100px;height:100px;border:0;">
+      							</a>
+    						</div>
+
+  						</div>
+			</div>
+			</div>
+		  </div>
+		  
+		<!-- END GRID -->
+		</div>
+
+		<!-- END MAIN -->
+		</div>
+		
 	</section>
+
+	
+	
+	
 		
 	<section>
 		<header id = main_section>
@@ -332,19 +351,8 @@ function showPage() {
 		<div class="column">
 	    	
 	  		<h3>Courses Ongoing ...</h3>
-			<div class="container">
-  				<img src="images/pro1.PNG" alt="Avatar" class="image">
-  					<div class="overlay">
-    						<div class="text">
-      							<a href="https://www.udemy.com/try-django/" target="_blank"> Django(Udemy) </a><br>
-							<a href="https://www.coursera.org/learn/convolutional-neural-networks/" target="_blank"> Convolutional Neural Networks(Coursera) </a><br>
-      							
-      							
-    						</div>
-
-  						</div>
-			</div>
-			
+			<hr><a href="https://www.udemy.com/try-django/" target="_blank"> Django(Udemy) <br>
+			<hr><a href="https://www.coursera.org/learn/convolutional-neural-networks/" target="_blank"> Convolutional Neural Networks(Coursera) <br>
 			
 	    		
 	    	
@@ -372,14 +380,7 @@ function showPage() {
 	    </object>
 	    </div>
 	</section>
-
-
-
-	
-		
-
-	
-
+			
 	<section>
 		<header id = main_section>
 				<hgroup>
@@ -409,6 +410,7 @@ function showPage() {
 	  </form>
 
 	</section>
+
 	
 
 	<footer id ="footer">
