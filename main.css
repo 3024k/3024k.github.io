@@ -1,6 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 
 }
 
@@ -205,6 +206,8 @@ nav{
 	color:white;
 	
 }
+/* Prject button */
+
 
 #project_menu li{
 	display: inline-block;
@@ -222,6 +225,73 @@ nav{
 		padding: 15px 20px;
 		text-decoration: none;
 		
+}
+.main {
+ 
+  margin: auto;
+}
+
+
+
+.pro_row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.pro_row,
+.pro_row > .pro_column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.pro_column {
+  float: left;
+  width: 50%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.pro_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  background-color: white; /* Green */
+  border: 2px solid #4CAF50;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn.active {
+  background-color: green;
+  color: white;
 }
 #project_menu a:hover{
 	color: #df1c44; 
