@@ -7,7 +7,8 @@
 
 h1{
 	font: bold 40px Tahoma;
-	color: rgb(64, 197, 110);
+	color: color: rgb(106, 90, 205);
+
 }
 h2{
 	font: bold 14px Tahoma;
@@ -29,7 +30,7 @@ header, section, footer, nav, article, hgroup{
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
-  border: 16px solid green;
+  border: 16px solid rgb(106, 90, 205);
   border-radius: 50%;
   border-top: 16px solid white;
   width: 120px;
@@ -149,7 +150,7 @@ nav{
 }
 #top_header{
 	/*background: black;*/
-	color: rgb(64, 197, 110);
+	color: rgb(106, 90, 205);
 	font: bold 60px Tahoma; 
 	padding: 10px 10px;
 	
@@ -163,7 +164,7 @@ nav{
 	color: white;
 	
 	
-	background-color: rgb(64, 197, 110);
+	background-color: rgb(106, 90, 205);
 
 		
 	font-family: verdana;
@@ -399,7 +400,7 @@ width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
-	background:#6adcfa;
+	background:rgb(106, 90, 205); /*#6adcfa*/
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:4px;
 	-moz-border-radius-topleft:3px;
@@ -425,7 +426,7 @@ width:110px;
 .skillbar-bar {
 	height:20px;
 	width:0px;
-	background:#6adcfa;
+	background:rgb(106, 90, 205); /*#6adcfa*/
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -438,8 +439,8 @@ width:110px;
 	font-size:11px;
 	height:20px;
 	line-height:15px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+	color:rgb(106, 90, 205); /*#ffffff;#6adcfa;color:rgba(0, 0, 0, 0.4);*/
+	
 }
 .container {
   position: relative;
