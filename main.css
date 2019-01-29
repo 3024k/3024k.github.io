@@ -7,7 +7,7 @@
 
 h1{
 	font: bold 40px Tahoma;
-	color: color: rgb(106, 90, 205);
+	color: rgb(106, 90, 205);
 
 }
 h2{
@@ -272,7 +272,7 @@ nav{
 /* Style the buttons */
 .btn {
   background-color: white; /* Green */
-  border: 2px solid #4CAF50;
+  border: 2px solid gray;
   color: black;
   padding: 16px 32px;
   text-align: center;
@@ -286,12 +286,12 @@ nav{
 }
 
 .btn:hover {
-  background-color: #4CAF50;
+  background-color: rgb(106, 90, 205);
   color: white;
 }
 
 .btn.active {
-  background-color: green;
+  background-color: rgb(106, 90, 205);
   color: white;
 }
 #project_menu a:hover{
@@ -575,7 +575,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: rgb(64,197,110);
+  background: rgb(106, 90, 205);
   color:white;
   font: bold 14px Tahoma;
   -webkit-transition: background 0.3s ease-in-out;
